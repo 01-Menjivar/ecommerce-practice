@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+
+@theme {
+  --font-primary: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
