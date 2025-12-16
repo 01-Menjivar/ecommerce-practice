@@ -1,75 +1,89 @@
-# React + TypeScript + Vite
+# Shopping App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web de **shopping / e‑commerce** construida con **React 19 + Vite + TypeScript**, usando **TailwindCSS** para estilos, **React Router** para navegación y **TanStack React Query** para el manejo de datos remotos.
 
-Currently, two official plugins are available:
+El proyecto utiliza **json-server** como backend mock para simular una API REST durante el desarrollo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Instalación
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Clona el repositorio e instala las dependencias:
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm install
+# o
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ▶️ Scripts disponibles
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Levantar el frontend
+
+```bash
+pnpm dev
+# o
+npm run dev
 ```
+
+La app estará disponible en:
+
+```
+http://localhost:5173
+```
+
+---
+
+### Levantar el backend mock (json-server)
+
+Este proyecto **requiere** que json-server esté corriendo para funcionar correctamente.
+
+```bash
+pnpm run server
+# o
+npm run server
+```
+
+Esto levanta un servidor REST usando el archivo:
+
+```
+src/db.json
+```
+
+Disponible en:
+
+```
+http://localhost:3001
+```
+
+Ejemplo de endpoints:
+
+```txt
+GET    /products
+GET    /products/:id
+POST   /cart
+```
+
+> ⚠️ Asegúrate de que el puerto **3001** esté libre antes de iniciar el servidor.
+
+---
+
+## 🔄 Flujo de datos
+
+* **React Query** se encarga de:
+
+  * Fetching de productos
+  * Cacheo
+  * Estados de loading / error
+* **Zustand** maneja estado local global como:
+
+  * Carrito de compras
+* **Context API** se usa solo para estado transversal no relacionado con datos remotos:
+
+  * Tema (dark / light)
+  * Notificaciones
+
+---
+
