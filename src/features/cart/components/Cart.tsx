@@ -2,6 +2,7 @@
 import Button from "../../../shared/components/ui/Button";
 import CartItem from "./CartItem";
 import { useCartStore } from "../store/cartStore";
+import { Link } from "react-router-dom";
 
 export default function Cart(){
 
@@ -26,7 +27,10 @@ export default function Cart(){
                         <CartItem key={item.product.id} item={item} />
                     ))}
                 </ul>
+                <div className="flex gap-3.5">
+                <Link to="/" className="mt-4 w-full text-black bg-gray-100 hover:bg-gray-200 py-2 px-4 rounded border border-gray-300 cursor-pointer text-center">Seguir comprando</Link>
                 <Button title="Limpiar carrito" variant="primary" onClick={clearCart}/>
+                </div>
         </div>
     )
 }
