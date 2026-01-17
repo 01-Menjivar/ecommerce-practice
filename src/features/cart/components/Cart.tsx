@@ -4,12 +4,13 @@ import CartItem from "./CartItem";
 import { useCartStore } from "../store/cartStore";
 import { Link } from "react-router-dom";
 
+
 export default function Cart(){
 
     // const {cartItems, clearCart} = useCart();
 
     const cartItems = useCartStore((state) => state.cartItems);
-    const clearCart = useCartStore((state) => state.cleartCart);
+    const clearCart = useCartStore((state) => state.clearCart);
 
 
     if(cartItems?.length === 0){
