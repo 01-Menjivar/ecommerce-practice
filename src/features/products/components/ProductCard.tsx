@@ -31,7 +31,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     return (
         <div
             onClick={handleClickDetails}
-            className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer flex flex-col h-full">
+            className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md dark:hover:shadow-blue-900 hover:shadow-xl transition-shadow duration-300 cursor-pointer flex flex-col h-full">
             <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4 rounded shrink-0" />
             <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white line-clamp-2">{product.name}</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4 grow line-clamp-3">{product.description}</p>
