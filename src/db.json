@@ -6,7 +6,7 @@
       "category": "Electrónica",
       "price": 899.99,
       "description": "Laptop con procesador Intel i7, 16GB RAM, 512GB SSD",
-      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+      "image": "https://placehold.co/400x400?text=Laptop",
       "stock": 15,
       "rating": 4.5
     },
@@ -16,7 +16,7 @@
       "category": "Electrónica",
       "price": 1299.99,
       "description": "Smartphone Apple con chip A17 Pro, cámara de 48MP",
-      "image": "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://placehold.co/400x400?text=Smartphone",
       "stock": 25,
       "rating": 4.8
     },
@@ -26,7 +26,7 @@
       "category": "Audio",
       "price": 349.99,
       "description": "Auriculares inalámbricos con cancelación de ruido",
-      "image": "https://images.unsplash.com/photo-1545127398-14699f92334b?w=400",
+      "image": "https://placehold.co/400x400?text=Headphones",
       "stock": 30,
       "rating": 4.7
     },
@@ -36,7 +36,7 @@
       "category": "Electrónica",
       "price": 699.99,
       "description": "Televisor 4K UHD con HDR y Smart TV",
-      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400",
+      "image": "https://placehold.co/400x400?text=Smart+TV",
       "stock": 10,
       "rating": 4.6
     },
@@ -46,7 +46,7 @@
       "category": "Accesorios",
       "price": 129.99,
       "description": "Teclado gaming RGB con switches mecánicos",
-      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400",
+      "image": "https://placehold.co/400x400?text=Keyboard",
       "stock": 40,
       "rating": 4.4
     },
@@ -56,7 +56,7 @@
       "category": "Accesorios",
       "price": 69.99,
       "description": "Mouse gaming con sensor óptico de 20000 DPI",
-      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
+      "image": "https://placehold.co/400x400?text=Mouse",
       "stock": 50,
       "rating": 4.5
     },
@@ -66,7 +66,7 @@
       "category": "Wearables",
       "price": 449.99,
       "description": "Reloj inteligente con GPS y monitoreo de salud",
-      "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400",
+      "image": "https://placehold.co/400x400?text=Smartwatch",
       "stock": 20,
       "rating": 4.7
     },
@@ -76,7 +76,7 @@
       "category": "Electrónica",
       "price": 599.99,
       "description": "Tablet con chip M1, pantalla Liquid Retina 10.9\"",
-      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400",
+      "image": "https://placehold.co/400x400?text=Tablet",
       "stock": 18,
       "rating": 4.6
     },
@@ -86,7 +86,7 @@
       "category": "Fotografía",
       "price": 2499.99,
       "description": "Cámara mirrorless full-frame con video 4K",
-      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400",
+      "image": "https://placehold.co/400x400?text=Camera",
       "stock": 8,
       "rating": 4.9
     },
@@ -96,7 +96,7 @@
       "category": "Gaming",
       "price": 499.99,
       "description": "Consola de videojuegos de última generación",
-      "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400",
+      "image": "https://placehold.co/400x400?text=Gaming+Console",
       "stock": 12,
       "rating": 4.8
     },
@@ -106,7 +106,7 @@
       "category": "Accesorios",
       "price": 49.99,
       "description": "Mochila resistente al agua con compartimento acolchado",
-      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+      "image": "https://placehold.co/400x400?text=Backpack",
       "stock": 60,
       "rating": 4.3
     },
@@ -116,9 +116,309 @@
       "category": "Almacenamiento",
       "price": 119.99,
       "description": "Unidad de estado sólido NVMe M.2",
-      "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=400",
+      "image": "https://placehold.co/400x400?text=SSD",
       "stock": 35,
       "rating": 4.7
+    },
+    {
+      "id": 13,
+      "name": "Mouse Logitech MX Master 3",
+      "category": "Periféricos",
+      "price": 99.99,
+      "description": "Mouse inalámbrico ergonómico para productividad",
+      "image": "https://placehold.co/400x400?text=Wireless+Mouse",
+      "stock": 40,
+      "rating": 4.8
+    },
+    {
+      "id": 14,
+      "name": "Teclado Mecánico Keychron K6",
+      "category": "Periféricos",
+      "price": 89.99,
+      "description": "Teclado mecánico inalámbrico compacto",
+      "image": "https://placehold.co/400x400?text=Mechanical+Keyboard",
+      "stock": 28,
+      "rating": 4.6
+    },
+    {
+      "id": 15,
+      "name": "Monitor LG UltraWide 29\"",
+      "category": "Monitores",
+      "price": 279.99,
+      "description": "Monitor ultrawide Full HD IPS",
+      "image": "https://placehold.co/400x400?text=Monitor",
+      "stock": 15,
+      "rating": 4.5
+    },
+    {
+      "id": 16,
+      "name": "Audífonos Sony WH-1000XM5",
+      "category": "Audio",
+      "price": 349.99,
+      "description": "Audífonos inalámbricos con cancelación de ruido",
+      "image": "https://placehold.co/400x400?text=Headphones",
+      "stock": 22,
+      "rating": 4.9
+    },
+    {
+      "id": 17,
+      "name": "Webcam Logitech C920",
+      "category": "Accesorios",
+      "price": 79.99,
+      "description": "Webcam Full HD 1080p",
+      "image": "https://placehold.co/400x400?text=Webcam",
+      "stock": 33,
+      "rating": 4.4
+    },
+    {
+      "id": 18,
+      "name": "Disco Duro Externo WD 2TB",
+      "category": "Almacenamiento",
+      "price": 89.99,
+      "description": "Disco duro portátil USB 3.0",
+      "image": "https://placehold.co/400x400?text=External+HDD",
+      "stock": 50,
+      "rating": 4.6
+    },
+    {
+      "id": 19,
+      "name": "Memoria RAM Corsair 16GB",
+      "category": "Componentes",
+      "price": 74.99,
+      "description": "DDR4 3200MHz para PC",
+      "image": "https://placehold.co/400x400?text=RAM",
+      "stock": 45,
+      "rating": 4.7
+    },
+    {
+      "id": 20,
+      "name": "Router TP-Link AX3000",
+      "category": "Redes",
+      "price": 129.99,
+      "description": "Router Wi-Fi 6 de alta velocidad",
+      "image": "https://placehold.co/400x400?text=WiFi+Router",
+      "stock": 18,
+      "rating": 4.5
+    },
+    {
+      "id": 21,
+      "name": "Smartwatch Apple Watch SE",
+      "category": "Wearables",
+      "price": 249.99,
+      "description": "Reloj inteligente con monitoreo de actividad",
+      "image": "https://placehold.co/400x400?text=Smartwatch",
+      "stock": 26,
+      "rating": 4.6
+    },
+    {
+      "id": 22,
+      "name": "Tablet Samsung Galaxy Tab S6 Lite",
+      "category": "Tablets",
+      "price": 329.99,
+      "description": "Tablet Android con S Pen",
+      "image": "https://placehold.co/400x400?text=Android+Tablet",
+      "stock": 14,
+      "rating": 4.4
+    },
+    {
+      "id": 23,
+      "name": "Base Enfriadora para Laptop",
+      "category": "Accesorios",
+      "price": 29.99,
+      "description": "Base con ventiladores para laptops",
+      "image": "https://placehold.co/400x400?text=Cooling+Pad",
+      "stock": 60,
+      "rating": 4.3
+    },
+    {
+      "id": 24,
+      "name": "Cámara de Seguridad Xiaomi",
+      "category": "Smart Home",
+      "price": 49.99,
+      "description": "Cámara IP con visión nocturna",
+      "image": "https://placehold.co/400x400?text=Security+Camera",
+      "stock": 38,
+      "rating": 4.5
+    },
+    {
+      "id": 25,
+      "name": "Impresora HP DeskJet 2775",
+      "category": "Impresoras",
+      "price": 69.99,
+      "description": "Impresora multifunción inalámbrica",
+      "image": "https://placehold.co/400x400?text=Printer",
+      "stock": 12,
+      "rating": 4.2
+    },
+    {
+      "id": 26,
+      "name": "Micrófono Blue Yeti",
+      "category": "Audio",
+      "price": 129.99,
+      "description": "Micrófono USB profesional",
+      "image": "https://placehold.co/400x400?text=Microphone",
+      "stock": 20,
+      "rating": 4.8
+    },
+    {
+      "id": 27,
+      "name": "Cargador USB-C Anker 65W",
+      "category": "Accesorios",
+      "price": 49.99,
+      "description": "Cargador rápido GaN",
+      "image": "https://placehold.co/400x400?text=USB-C+Charger",
+      "stock": 55,
+      "rating": 4.7
+    },
+    {
+      "id": 28,
+      "name": "SSD Crucial 500GB",
+      "category": "Almacenamiento",
+      "price": 59.99,
+      "description": "SSD SATA III 2.5\"",
+      "image": "https://placehold.co/400x400?text=SSD",
+      "stock": 42,
+      "rating": 4.6
+    },
+    {
+      "id": 29,
+      "name": "Tarjeta Gráfica RTX 4060",
+      "category": "Componentes",
+      "price": 399.99,
+      "description": "GPU NVIDIA para gaming",
+      "image": "https://placehold.co/400x400?text=GPU",
+      "stock": 9,
+      "rating": 4.8
+    },
+    {
+      "id": 30,
+      "name": "Silla Gamer Secretlab",
+      "category": "Muebles",
+      "price": 429.99,
+      "description": "Silla ergonómica para largas sesiones",
+      "image": "https://placehold.co/400x400?text=Gaming+Chair",
+      "stock": 7,
+      "rating": 4.7
+    },
+    {
+      "id": 31,
+      "name": "Lámpara LED Inteligente",
+      "category": "Smart Home",
+      "price": 34.99,
+      "description": "Lámpara RGB controlada por app",
+      "image": "https://placehold.co/400x400?text=Smart+Lamp",
+      "stock": 48,
+      "rating": 4.4
+    },
+    {
+      "id": 32,
+      "name": "Power Bank Xiaomi 20000mAh",
+      "category": "Accesorios",
+      "price": 39.99,
+      "description": "Batería externa de alta capacidad",
+      "image": "https://placehold.co/400x400?text=Power+Bank",
+      "stock": 52,
+      "rating": 4.6
+    },
+    {
+      "id": 33,
+      "name": "Hub USB-C 7 en 1",
+      "category": "Accesorios",
+      "price": 59.99,
+      "description": "Adaptador multipuerto USB-C",
+      "image": "https://placehold.co/400x400?text=USB-C+Hub",
+      "stock": 36,
+      "rating": 4.5
+    },
+    {
+      "id": 34,
+      "name": "Altavoz Bluetooth JBL Charge 5",
+      "category": "Audio",
+      "price": 179.99,
+      "description": "Altavoz portátil resistente al agua",
+      "image": "https://placehold.co/400x400?text=Bluetooth+Speaker",
+      "stock": 21,
+      "rating": 4.8
+    },
+    {
+      "id": 35,
+      "name": "Teclado Numérico USB",
+      "category": "Periféricos",
+      "price": 19.99,
+      "description": "Teclado numérico externo",
+      "image": "https://placehold.co/400x400?text=Numeric+Keyboard",
+      "stock": 70,
+      "rating": 4.1
+    },
+    {
+      "id": 36,
+      "name": "Mousepad XL RGB",
+      "category": "Accesorios",
+      "price": 24.99,
+      "description": "Mousepad grande con iluminación RGB",
+      "image": "https://placehold.co/400x400?text=Mousepad",
+      "stock": 44,
+      "rating": 4.3
+    },
+    {
+      "id": 37,
+      "name": "NAS Synology DS220+",
+      "category": "Redes",
+      "price": 299.99,
+      "description": "Servidor NAS de 2 bahías",
+      "image": "https://placehold.co/400x400?text=NAS",
+      "stock": 6,
+      "rating": 4.7
+    },
+    {
+      "id": 38,
+      "name": "Proyector Full HD Epson",
+      "category": "Video",
+      "price": 549.99,
+      "description": "Proyector 1080p para cine en casa",
+      "image": "https://placehold.co/400x400?text=Projector",
+      "stock": 5,
+      "rating": 4.6
+    },
+    {
+      "id": 39,
+      "name": "Cable HDMI 2.1",
+      "category": "Accesorios",
+      "price": 14.99,
+      "description": "Cable HDMI 8K ultra alta velocidad",
+      "image": "https://placehold.co/400x400?text=HDMI+Cable",
+      "stock": 100,
+      "rating": 4.4
+    },
+    {
+      "id": 40,
+      "name": "SSD Externo SanDisk 1TB",
+      "category": "Almacenamiento",
+      "price": 139.99,
+      "description": "SSD portátil USB-C",
+      "image": "https://placehold.co/400x400?text=External+SSD",
+      "stock": 27,
+      "rating": 4.7
+    },
+    {
+      "id": 41,
+      "name": "Brazo Articulado para Monitor",
+      "category": "Accesorios",
+      "price": 89.99,
+      "description": "Soporte ajustable para monitor",
+      "image": "https://placehold.co/400x400?text=Monitor+Arm",
+      "stock": 19,
+      "rating": 4.6
+    },
+    {
+      "id": 42,
+      "name": "UPS APC 900VA",
+      "category": "Energía",
+      "price": 159.99,
+      "description": "Sistema de respaldo de energía",
+      "image": "https://placehold.co/400x400?text=UPS",
+      "stock": 11,
+      "rating": 4.5
     }
   ]
 }

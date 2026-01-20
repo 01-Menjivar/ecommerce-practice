@@ -1,9 +1,11 @@
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import { getAllProducts } from "../services/ProductsService";
 
 export const useProducts = () =>{
-    return useQuery({
+    return useInfiniteQuery({
         queryKey: ['products'],
-        queryFn: getAllProducts,
+        queryFn: ({pageParam }) => getAllProducts(pageParam),
+        getNextPageParam : (lastPage) => (lastPage.next),
+        initialPageParam: 1
     });
 }
