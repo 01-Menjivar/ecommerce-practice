@@ -1,26 +1,26 @@
 export default function ProductsSkeleton() {
     return (
-        <div className="container mx-auto px-4 py-8">
-            
-            <div className="h-9 bg-gray-300 dark:bg-gray-700 rounded mb-8 w-64 animate-pulse"></div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="page-enter">
+
+            <div className="mb-8 h-9 w-64 animate-pulse rounded bg-[var(--bg-muted)]"></div>
+
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {Array.from({ length: 8 }).map((_, index) => (
-                    <div key={index} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md animate-pulse">
-                        <div className="w-full h-48 bg-gray-300 dark:bg-gray-700 mb-4 rounded"></div>
-                        
-                        <div className="h-6 bg-gray-300 dark:bg-gray-700 rounded mb-2 w-3/4"></div>
-                        
+                    <div key={index} className="ui-card animate-pulse p-4">
+                        <div className="mb-4 h-48 w-full rounded-xl bg-[var(--bg-muted)]"></div>
+
+                        <div className="mb-2 h-6 w-3/4 rounded bg-[var(--bg-muted)]"></div>
+
                         <div className="space-y-2 mb-4">
-                            <div className="h-4 bg-gray-300 dark:bg-gray-700 rounded w-full"></div>
-                            <div className="h-4 bg-gray-300 dark:bg-gray-700 rounded w-5/6"></div>
+                            <div className="h-4 w-full rounded bg-[var(--bg-muted)]"></div>
+                            <div className="h-4 w-5/6 rounded bg-[var(--bg-muted)]"></div>
                         </div>
-                        
-                        <div className="h-6 bg-gray-300 dark:bg-gray-700 rounded mb-4 w-1/4"></div>
-                        
+
+                        <div className="mb-4 h-6 w-1/4 rounded bg-[var(--bg-muted)]"></div>
+
                         <div className="space-y-2">
-                            <div className="h-10 bg-gray-300 dark:bg-gray-700 rounded w-full"></div>
-                            <div className="h-10 bg-gray-300 dark:bg-gray-700 rounded w-full"></div>
+                            <div className="h-10 w-full rounded-xl bg-[var(--bg-muted)]"></div>
+                            <div className="h-10 w-full rounded-xl bg-[var(--bg-muted)]"></div>
                         </div>
                     </div>
                 ))}

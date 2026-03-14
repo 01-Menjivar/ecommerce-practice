@@ -31,14 +31,16 @@ export default function ProductCard({ product }: ProductCardProps) {
     return (
         <div
             onClick={handleClickDetails}
-            className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md dark:hover:shadow-blue-900 hover:shadow-xl transition-shadow duration-300 cursor-pointer flex flex-col h-full">
-            <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4 rounded shrink-0" />
-            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white line-clamp-2">{product.name}</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-4 grow line-clamp-3">{product.description}</p>
+            className="ui-card group cursor-pointer overflow-hidden p-4 flex h-full flex-col">
+            <div className="overflow-hidden rounded-xl border border-(--border)">
+                <img src={product.image} alt={product.name} className="h-48 w-full shrink-0 object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <h3 className="mb-2 mt-4 line-clamp-2 text-xl font-semibold text-(--text)">{product.name}</h3>
+            <p className="ui-muted mb-4 grow line-clamp-3">{product.description}</p>
             <div className="mt-auto">
-                <span className="text-lg font-bold text-gray-900 dark:text-white block mb-2">${product.price.toFixed(2)}</span>
-                <Button title="Agregar al carrito" onClick={handleAddToCart} variant="primary" />
-                <Button title="Ver detalles" onClick={handleClickDetails} variant="secondary" />
+                <span className="mb-2 block text-lg font-bold text-(--text)">${product.price.toFixed(2)}</span>
+                <Button title="Agregar al carrito" onClick={handleAddToCart} variant="primary" className="mt-4" />
+                <Button title="Ver detalles" onClick={handleClickDetails} variant="secondary" className="mt-3" />
             </div>
         </div>
     )

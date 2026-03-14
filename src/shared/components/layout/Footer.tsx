@@ -1,8 +1,8 @@
 export default function Footer (){
     return(
-        <div>
-            <footer className="bg-gray-200 dark:bg-gray-900 text-center p-4 mt-8">
-                <p className="text-gray-700 dark:text-gray-300">&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+        <div className="mt-10 border-t border-[var(--border)] bg-[color:var(--surface)]/80 backdrop-blur-lg">
+            <footer className="mx-auto w-full max-w-7xl px-4 py-6 text-center sm:px-6 lg:px-8">
+                <p className="text-sm tracking-wide text-[var(--text-muted)]">&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
             </footer>
         </div>
     )

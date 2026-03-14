@@ -1,8 +1,8 @@
 export default function NotFoundPage() {
     return (
-        <div className="container mx-auto px-4 py-8 text-center">
-            <h1 className="text-5xl font-bold mb-4 text-gray-800 dark:text-white">404</h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300">Lo sentimos, la página que buscas no existe.</p>
+        <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-6 py-10 text-center shadow-[var(--shadow)] page-enter">
+            <h1 className="mb-3 font-display text-7xl leading-none text-[var(--primary)]">404</h1>
+            <p className="text-xl text-[var(--text-muted)]">Lo sentimos, la pagina que buscas no existe.</p>
         </div>
     );
 }

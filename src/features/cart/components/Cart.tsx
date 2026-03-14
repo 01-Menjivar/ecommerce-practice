@@ -15,22 +15,24 @@ export default function Cart(){
 
     if(cartItems?.length === 0){
         return (
-            <div className="flex flex-col items-center justify-center h-screen">
-                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Tu carrito está vacío</h2>
+            <div className="flex min-h-[50vh] flex-col items-center justify-center rounded-2xl border border-(--border) bg-(--surface) px-6 py-8 text-center shadow-(--shadow)">
+                <h2 className="mb-2 text-3xl font-display text-(--text)">Tu carrito esta vacio</h2>
+                <p className="text-(--text-muted)">Agrega productos para comenzar tu compra.</p>
             </div>
         )
     }
 
     return(
-        <div className="container mx-auto px-4 py-8">
+        <div className="page-enter">
+            <h2 className="mb-5 text-4xl font-display text-(--text)">Tu Carrito</h2>
             <ul>
                     {cartItems?.map((item) => (
                         <CartItem key={item.product.id} item={item} />
                     ))}
                 </ul>
-                <div className="flex gap-3.5">
-                <Link to="/" className="mt-4 w-full text-black bg-gray-100 hover:bg-gray-200 py-2 px-4 rounded border border-gray-300 cursor-pointer text-center">Seguir comprando</Link>
-                <Button title="Limpiar carrito" variant="primary" onClick={clearCart}/>
+                <div className="mt-4 flex items-center gap-3.5 max-sm:flex-col">
+                <Link to="/" className="inline-flex w-full items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--surface-soft)] px-4 py-2.5 text-center text-sm font-semibold text-[var(--text)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--primary)]">Seguir comprando</Link>
+                <Button title="Limpiar carrito" variant="primary" onClick={clearCart} className="mt-0"/>
                 </div>
         </div>
     )

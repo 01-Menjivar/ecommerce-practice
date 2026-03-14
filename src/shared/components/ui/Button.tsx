@@ -2,15 +2,17 @@ interface ButtonProps {
     title: string;
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
     variant?: "primary" | "secondary";
+    className?: string;
 }
 
-export default function Button ({title,onClick,variant = "primary"}: ButtonProps) {
+export default function Button ({title,onClick,variant = "primary", className = ""}: ButtonProps) {
 
-    const primaryStyle = "mt-4 w-full bg-blue-600 dark:bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-300 cursor-pointer"
-    const secondaryStyle = "mt-4 w-full bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300 py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300 cursor-pointer"
+    const baseStyle = "w-full rounded-xl border px-4 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--primary)] cursor-pointer"
+    const primaryStyle = `${baseStyle} border-[var(--primary)] bg-[var(--primary)] text-white hover:-translate-y-0.5 hover:bg-[var(--primary-strong)]`
+    const secondaryStyle = `${baseStyle} border-[var(--border)] bg-[var(--surface-soft)] text-[var(--text)] hover:-translate-y-0.5 hover:border-[var(--primary)]`
 
     return(
-        <button onClick={onClick} className={variant === "primary" ? primaryStyle : secondaryStyle}>
+        <button onClick={onClick} className={`${variant === "primary" ? primaryStyle : secondaryStyle} ${className}`.trim()}>
             {title}
         </button>
     )

@@ -15,20 +15,20 @@ export default function ProductDetail() {
     }
 
     if (!product) {
-        return <p>Product not found.</p>;
+        return <p className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] px-6 py-4 text-[var(--danger)]">Producto no encontrado.</p>;
     }
 
     return (
-        <div className="max-w-4xl mx-auto p-4">
-            <img src={product.image} alt={product.name} className="w-full h-96 object-cover rounded mb-4"/>
-            <h1 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">{product.name}</h1>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">{product.description}</p>
-            <span className="text-2xl font-bold text-gray-900 dark:text-white">${product.price.toFixed(2)}</span>
-            <div className="mt-4 flex space-x-4">
-                <Link to="/" className="px-4 py-2 bg-gray-500 text-white rounded cursor-pointer">Volver</Link>
+        <div className="ui-card mx-auto max-w-4xl overflow-hidden p-5 md:p-6">
+            <img src={product.image} alt={product.name} className="mb-5 h-96 w-full rounded-xl object-cover border border-[var(--border)]"/>
+            <h1 className="mb-2 text-4xl font-display leading-tight text-[var(--text)]">{product.name}</h1>
+            <p className="mb-5 text-[var(--text-muted)]">{product.description}</p>
+            <span className="text-2xl font-bold text-[var(--text)]">${product.price.toFixed(2)}</span>
+            <div className="mt-5 flex flex-wrap gap-3">
+                <Link to="/" className="rounded-xl border border-[var(--border)] bg-[var(--surface-soft)] px-4 py-2 text-sm font-semibold text-[var(--text)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--primary)]">Volver</Link>
                 <button
                 onClick={() => addToCart(product)}
-                className="px-4 py-2 bg-blue-600 text-white rounded cursor-pointer">Agregar al carrito</button>
+                className="cursor-pointer rounded-xl border border-[var(--primary)] bg-[var(--primary)] px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[var(--primary-strong)]">Agregar al carrito</button>
             </div>
         </div>
     );

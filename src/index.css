@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700;800&display=swap");
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
 
 @theme {
-  --font-primary: "Montserrat", sans-serif;
+  --font-primary: "Outfit", sans-serif;
+  --font-display: "Instrument Serif", serif;
 }
 
 @font-face {
@@ -12,4 +14,111 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+}
+
+:root {
+  --bg: #f3f6f7;
+  --bg-muted: #e8eff1;
+  --surface: #ffffff;
+  --surface-soft: #f7fbfc;
+  --text: #10222b;
+  --text-muted: #54646f;
+  --border: #cfdee3;
+  --primary: #0f766e;
+  --primary-strong: #0b5f58;
+  --primary-soft: #d5f3ef;
+  --accent: #f59e0b;
+  --danger: #be123c;
+  --success: #0f766e;
+  --shadow: 0 16px 34px -24px rgba(7, 31, 42, 0.45);
+}
+
+.dark {
+  --bg: #07131c;
+  --bg-muted: #0d202b;
+  --surface: #102330;
+  --surface-soft: #163243;
+  --text: #ebf3f7;
+  --text-muted: #abc0cb;
+  --border: #2a4554;
+  --primary: #21b6a8;
+  --primary-strong: #14988c;
+  --primary-soft: #13353b;
+  --accent: #f0b429;
+  --danger: #fb7185;
+  --success: #34d399;
+  --shadow: 0 24px 48px -28px rgba(0, 0, 0, 0.85);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--primary) 18%, transparent), transparent 32%),
+    radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 30%),
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-muted) 62%, transparent), var(--bg));
+  background-attachment: fixed;
+  transition: background-color 320ms ease, color 320ms ease;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--primary) 35%, white);
+  color: #042125;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -18px, 0) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@layer components {
+  .page-enter {
+    animation: fade-up 420ms ease both;
+  }
+
+  .ui-card {
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 90%, white), var(--surface-soft));
+    box-shadow: var(--shadow);
+    transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+  }
+
+  .ui-card:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+    box-shadow: 0 20px 34px -22px color-mix(in srgb, var(--primary) 46%, transparent);
+  }
+
+  .ui-muted {
+    color: var(--text-muted);
+  }
 }
