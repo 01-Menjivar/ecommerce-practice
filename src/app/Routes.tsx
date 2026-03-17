@@ -1,16 +1,23 @@
-import { Routes, Route } from "react-router-dom"
+import { createBrowserRouter } from "react-router-dom"
 import NotFoundPage from "../pages/NotFoundPage"
-import ProductsPage from "../features/products/pages/ProductsPage"
-import ProductDetailPage from "../features/products/pages/ProductDetailPage"
-import CartPage from "../features/cart/pages/CartPage"
+import Products from "../features/products/components/Products"
+import MainLayout from "../shared/components/layout/MainLayout"
+import Cart from "../features/cart/components/Cart"
+import ProductDetail from "../features/products/components/ProductDetail"
 
-export default function AppRoutes(){
-    return(
-        <Routes>
-                <Route path="/" element={<ProductsPage />} />
-                <Route path="/cart" element={<CartPage />} />
-                <Route path="/product/:id" element={<ProductDetailPage/>} />
-                <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-    )
-}
+const router = createBrowserRouter([
+    {
+        element: <MainLayout />,
+        children: [
+            { path: "/", element: <Products /> },
+            { path: "/cart", element: <Cart /> },
+            { path: "/product/:id", element: <ProductDetail /> },
+        ],
+    },
+    {
+        path: "*",
+        element: <NotFoundPage />,
+    },
+])
+
+export default router
